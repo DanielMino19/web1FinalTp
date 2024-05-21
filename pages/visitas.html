@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitas | Tonashei</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../public/images/logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <nav>
+    <div>
+      <div class="logo-container">
+        <img src="../public/images/logos/logo.png" alt="Logo">
+        <a  class="links" href="./index.html">Museum Tonashei</a>
+      </div>
+      <ul class="ul-menu">
+        <li>
+          <a class="links" href="./visitas.html">Visitas</a>
+        </li>
+        <li>
+          <a class="links" href="../index.html#colecciones">Colecciónes</a>
+        </li>
+        <li>
+          <a class="links" href="/pages/contact.html">Contacto</a>
+        </li>
+        <div>
+          <button class="button-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0V0z"/>
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+            </svg>
+            
+          </button>
+        </div>
+      </ul>
+
+      <div>
+        <button class="button-nav">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0V0z"/>
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+          </svg>
+          
+        </button>
+      </div>
+    </div>
+  </nav>
+
+    <header>
+      <div class="about-container" >
+          <img id="about-artworks" class="about-img" src="https://www.igta5.com/images/vinewood-sign-background.jpg" alt="imagen del banner">
+          <div>
+            <div>
+              <a href="">By tonashei</a>
+              <h5>Visitas Guiadas.</h5>
+              <p>Registrate para asistir a las exhibiciones.</p>
+              <a class="btn" href="../index.html">Volver a la Home</a>
+            </div>
+          </div>
+      </div>
+  </header>
+
+  <div class="about-visit"> 
+    <h1 class="section-title">Visita a la Exhibición de Artworks de Videojuegos</h1>
+    <p>La exhibición invita al público a recorrer todas sus salas de exposición permanente en la planta baja y el primer piso, y la muestra temporaria "GTA V. Dark Souls. Destiny. Artífices del videojuego".</p>
+    <p>La entrada es libre y gratuita.</p>
+  </div>
+   
+    
+    <div class="visit-container" id="wraper">
+  
+
+      <div id="map">
+          <img src="https://media.bellasartes.gob.ar/h/plano_piso0_abril24.jpg" alt="Mapa del Museo" >
+      </div>
+
+      <form class="form-visits" id="tour-form" onsubmit="return validarFormularioDeVisitas(event)">
+        <label for="name">Nombre Completo:</label>
+        <input type="text" id="nameVisit" name="name" >
+        <span id="nombreError" class="error"></span>
+    
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="emailVisit" name="email" >
+        <span id="emailError" class="error"></span>
+    
+        <label for="date">Fecha de la Visita:</label>
+        <input type="date"  id="dateVisit" name="date" >
+        <span id="dateError" class="error"></span>
+    
+        <label for="time">Hora de la Visita:</label>
+        <select id="timeVisit" name="time" >
+            <option value="">Seleccione una hora</option>
+            <option value="10:00">10:00 AM </option>
+            <option value="12:00">12:00 PM </option>
+            <option value="14:00">2:00 PM </option>
+            <option value="16:00">4:00 PM </option>
+            <option value="18:00">6:00 PM </option>
+            <option value"20:00"> 20:00 pm</option>
+        </select>
+        <span id="timeError" class="error"></span>
+    
+        <button type="submit">Reservar Turno</button>
+    </form>
+    
+    </div>
+
+
+    
+    <footer>
+      <div class="colection-grid">
+        <div class="footer-detail">
+          <h5>Visitá el Museumtonashei</h5>
+          <ul>
+            <li>
+              Av.siempre viva, calle falsa <br/> 403 Entre Rios Argentina
+            </li>
+            <li>
+              <a href="tell:+3404040404">+3404040404</a>
+            </li>
+            <li>
+              <a href="tell:+3404040344">+3404040344</a>
+            </li>
+            <li>
+              <a href="mailto:museumtonashei@tonashei.com">museumtonashei@tonashei.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-detail">
+          <h5>Horarios</h5>
+          <ul>
+            <li>Lunes: cerrado</li>
+            <li>Martes: de 11:00 a 20:00</li>
+            <li>Miércoles: de 11:00 a 20:00</li>
+            <li>Jueves: de 11:00 a 20:00</li>
+            <li>Viernes: de 11:00 a 20:00</li>
+            <li>Sábado: de 10:00 a 20:00</li>
+            <li>Domingo: de 10:00 a 20:00</li>
+          </ul>
+        </div>
+
+        <div class="footer-detail">
+          <h5>Visita nuestras Colecciones</h5>
+          <ul>
+            <li>
+              <a href="./colections/gtav.html">GTA V artworks</a>
+            </li>
+            <li>
+              <a href="./colections/darksouls.html">Dark Souls artworks</a>
+            </li>
+            <li>
+              <a href="./colections/destiny.html">Destiny artworks</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="logo-container" >
+          <img  src="../public/images/logos/logo.png" alt="logo">
+          <h5>Museum Tonashei &copy;</h5>
+        </div>
+    </footer>
+    <script src="../app.js"></script>
+
+</body>
+</html>
